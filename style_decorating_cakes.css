@@ -1,0 +1,271 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(252, 252, 252);
+}
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'JejuMyeongjo';
+    src: url('./fonts/JejuMyeongjo.ttf');
+}
+
+.container{
+   max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 245);
+}
+/* хедер*/
+.main_header{
+    max-width: 1280px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+.main_header img {
+    width: 110px; /* Розмір логотипу */
+    height: 110px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    gap:45px;
+    font-size: 24px;
+    font-family:JejuMyeongjo ;
+}
+.navigation a {
+    color: #333;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color: rgba(200, 100, 140, 1); 
+}
+
+.pfone{
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+    align-items: center;
+    color: #333;
+}
+.pfone a {
+    color: #333;
+    text-decoration: none;
+   }
+
+.pfone a:hover {
+    color:rgba(200, 100, 140, 1);
+}
+.pfone img {
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+.pfone  img:hover {
+    transform: scale(1.2); /* Збільшуємо іконку на 20% */
+}
+.social{
+    display: flex;
+    gap:16px;
+}
+.social img {
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+.social  img:hover {
+    transform: scale(1.2); /* Збільшуємо іконку на 20% */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/*перший екран*/
+
+.first_screen{
+    background-image:url(./img/decorating_cakes/image.png);
+    background-size: cover; /* Зображення масштабуватиметься, щоб покрити весь блок */
+    background-position: center; /* Центрує зображення */
+    min-height: 628px;
+}
+.central_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.first_title{
+    font-size: 96px;
+    font-family: Pacifico;
+    color:rgb(31, 26, 26);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle a{
+    color:rgb(31, 26, 26);
+    text-decoration: none;
+    padding-right: 26px;
+}
+.subtitle a:hover{
+    text-decoration:underline;
+    color:rgba(200, 100, 140, 1);
+}
+.subtitle{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+.cakes, .cupcakes, .marshmallow, .cookies{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px;
+}
+
+.p_cakes{
+    font-family: JejuMyeongjo;
+    font-weight: 400;
+    font-size: 32px;
+    /* line-height: 50px; */ 
+    line-height: 1.5625;
+    color:rgb(31, 26, 26);
+    
+}
+
+.img_cake{
+    display: grid;
+   grid-template-columns: repeat(4,1fr);/*  4 колонки однакової ширини */
+    gap: 20px;
+   /* width: 100%;*/
+}
+.item{
+    width: 100%;
+    height: 100%;
+}
+.item.smal{
+    grid-column: span 1;/* Займає 1 колонку */
+    grid-row: span 1; /* Займає 1 рядок */
+   
+}
+.item.medium_v{
+    grid-column: span 1; /* Займає 1 колонку */
+    grid-row: span 2; /* Займає 2 рядки */
+}  
+.item.medium_g{
+    grid-column: span 2; /* Займає 2 колонки */
+    grid-row: span 1; /* Займає 1 рядок */
+} 
+.item.large{
+    grid-column: span 2; /* Займає 2 колонки */
+    grid-row: span 2; /* Займає 2 рядки */
+  
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/*футер*/
+
+footer{
+    background-image: url(./img/order/footer.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.foter_main{
+    margin: 80px;
+    padding: 45px 0;
+    text-align: left;
+}
+.footer_logo {
+    display: flex;
+}
+
+.footer_logo img {
+    width: 110px; /* Розмір логотипу */
+    height: 110px;
+    margin-right: 110px;
+}
+
+.footer_title h1 {
+    font-size: 48px; /* розмір основного заголовка */
+    font-family: Pacifico;
+    margin: 0;
+}
+
+.footer_title h3 {
+    font-size: 16px; /* розмір підзаголовка */
+    font-family: JejuMyeongjo;
+    font-weight: 400;
+    margin: 3px 0 0 190px;
+    padding: 0;
+}
+
+.contacts {
+    font-size: 24px;
+    font-family: JejuMyeongjo;
+    margin-top: 26px;
+}
+
+.contacts p {
+    margin: 0;
+    font-size: 24px;
+    font-family: JejuMyeongjo;
+}
+.pfone_links{
+    display: flex;
+    gap: 16px;
+    margin-top: 36px;
+    align-items: center;
+}
+
+.phone_link, .social_links img {
+    width: 32px; /* розмір іконок контактів */
+    height: 32px;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social_links a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-family: JejuMyeongjo;
+}
+
+

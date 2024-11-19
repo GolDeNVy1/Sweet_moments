@@ -1,0 +1,477 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(252, 252, 252);
+}
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'JejuMyeongjo';
+    src: url('./fonts/JejuMyeongjo.ttf');
+}
+
+.container{
+   max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 245);
+}
+/* хедер*/
+.main_header{
+    max-width: 1280px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+.main_header img {
+    width: 110px; /* Розмір логотипу */
+    height: 110px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    gap:45px;
+    font-size: 24px;
+    font-family:JejuMyeongjo ;
+}
+.navigation a {
+    color: #333;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color: rgba(200, 100, 140, 1); 
+}
+
+.pfone{
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+    align-items: center;
+    color: #333;
+}
+.pfone a {
+    color: #333;
+    text-decoration: none;
+   }
+
+.pfone a:hover {
+    color:rgba(200, 100, 140, 1);
+}
+.pfone img {
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+.pfone  img:hover {
+    transform: scale(1.2); /* Збільшуємо іконку на 20% */
+}
+.social{
+    display: flex;
+    gap:16px;
+}
+.social img {
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+.social  img:hover {
+    transform: scale(1.2); /* Збільшуємо іконку на 20% */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*перший екран*/
+
+.first_screen{
+    width: 100%;
+    min-height: 628px;
+    display: flex;
+}
+
+.background1{
+    background-image: url(./img/background1.png);
+    max-width: 188px;
+    min-height: 628px;
+}
+
+.central_screen{
+    width: 100%;
+    min-height: 628px;
+    background-color: rgba(250, 231, 217, 1);
+    display: flex;
+    flex-direction: column; /* Елементи розташовані вертикально */
+    justify-content: center; /* Центруємо по вертикалі */
+    align-items: center; /* Центруємо по горизонталі */
+    text-align: center;
+}
+
+.central_title{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.first_title{
+    font-size: 96px;
+    font-weight: 400px;
+    font-family: Pacifico;
+    color:rgb(31, 26, 26);
+    margin: 0;
+}
+.second_title{
+    font-size: 32px;
+    font-family: JejuMyeongjo;
+    color:rgb(31, 26, 26);
+    margin: 20px 0;
+}
+.subtitle{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 40px;
+    color:rgb(31, 26, 26);
+    margin: 0;
+}
+
+.button{
+    width: 150px;               
+    height: 150px;  
+    padding: 26px 12px;            
+    border-radius: 50%;        
+    background-color: rgba(229, 142, 163, 1); 
+    color: black;              
+    border: none;              
+    cursor: pointer;           
+    font-size: 16px;           
+    text-align: center; 
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    margin: 43px 0;
+    
+}
+a{
+    text-decoration: none;
+}
+.button_p{
+    font-size: 24px;
+    font-family: JejuMyeongjo;
+    color:rgb(31, 26, 26);
+    font-weight: 400;
+    /* line-height: 30px; */ 
+    line-height: 1.25;
+    text-align: center;
+    margin: 0;
+}
+
+.arrow_down{
+    width: 40px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: rgba(200, 100, 140, 1); 
+    transform: scale(1.1); /* Збільшення всієї кнопки при наведенні */
+}
+
+
+/*Оберіть свій смак*/
+
+.taste{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px;
+}
+.block_taste{
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 68px;
+}
+
+.img_taste{
+    border-radius: 100px 100px 0 100px;
+    width: 305px;
+    height: 262px;
+    float: left;
+    transition: transform 0.3s ease;
+}
+
+.img_taste:hover{
+    transform: scale(1.03);
+}
+
+.cake_taste{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 34px;
+    color:rgb(31, 26, 26);
+    margin: 0;
+    padding: 0;
+}
+
+.text_taste{
+    font-size: 26px;
+    font-family: JejuMyeongjo;
+    color:rgb(31, 26, 26);
+    padding-top:50px;
+    padding-right: 20px;
+    clear: both;
+}
+
+/*Види оформлення*/
+
+.design {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px; 
+}
+
+.fon_design{
+    max-width: 1278px;
+    height: 194px;
+    margin: 80px 0;
+}
+.pie_design{
+    display: flex;
+    justify-content: space-between;
+    /*max-width: 100%;  Ширина, щоб заповнити контейнер і притиснути зображення до країв */
+    gap: 20px;
+}
+.img_design{
+    border-radius: 50px;
+    width: 413px;
+    height: 413px;
+    margin: 0 0 20px 0;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+/*Як зробити замовлення*/
+.order{
+    background-image: url(./img/order/order.png);
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px;
+    display: flex;
+    flex-direction:column ;
+    max-width: 1280px;
+    min-height: 930px;
+    box-shadow: 5px 5px 10px rgb(99, 97, 97);
+}
+
+.subtitle_order{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 40px;
+    color:rgb(31, 26, 26);
+    margin: 52px 0 28px;
+}
+
+
+.li_order{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 32px;
+    color:rgb(31, 26, 26);
+    margin: 0 87px 108px;
+    padding-left: 30px;
+}
+
+/*Доставка*/
+
+.delivery{
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px;
+}
+
+.subtitle_delivery{
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 40px;
+    color:rgb(31, 26, 26);
+    margin: 52px 0 28px;
+    text-align: center;
+}
+.flex_delivery{
+    display: flex;
+    justify-content:center;
+    justify-content: space-between;
+}
+.delivery_1 {
+    border-radius: 50px;
+    width: 550px;
+    height: 143px;
+    box-shadow: 5px 5px 10px rgb(99, 97, 97);
+    padding-bottom: 40px;
+   
+}
+
+.delivery_1 p{
+    font-family: JejuMyeongjo;
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+    color:rgb(31, 26, 26); 
+    padding: 0;
+}
+
+/*Вибір смаколиків на різні свята*/
+.type_sweets{   
+    margin: 80px;
+    text-align: center;
+}
+
+.mane_type_sweets{
+    background-image: url(./img/order/mane_type_sweets.png);
+    font-family: JejuMyeongjo;
+    font-weight: 400;
+   
+    font-size: 32px;
+    text-align:left;
+    color:rgb(31, 26, 26);
+    box-shadow: 5px 5px 10px rgb(99, 97, 97);
+    line-height: 50px;
+}
+
+.p_type_sweets{
+    padding-top:24px;
+    margin: 33px 425px 0px 18px;
+}
+.li_type_sweets{
+   padding:0 24px 24px;
+   margin: 33px 425px 64px 18px;
+}
+
+.span_type_sweets{
+   font-family: "Pacifico";
+}
+
+/*Створіть свій унікальний десерт*/
+
+.unique{   
+    margin: 80px;
+    text-align: center;
+}
+
+.p_unique{
+    font-family: JejuMyeongjo;
+    font-weight: 400;
+    font-size: 32px;
+    text-align:left;
+    color:rgb(31, 26, 26);
+    padding-top:24px;
+    line-height: 50px;
+}   
+.li_unique{
+    font-family: JejuMyeongjo;
+    font-weight: 400;
+    font-size: 32px;
+    text-align:left;
+    color:rgb(31, 26, 26);
+    line-height: 50px;
+}
+
+/*футер*/
+
+footer{
+    background-image: url(./img/order/footer.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.foter_main{
+    margin: 80px;
+    padding: 45px 0;
+    text-align: left;
+}
+.footer_logo {
+    display: flex;
+}
+
+.footer_logo img {
+    width: 110px; /* Розмір логотипу */
+    height: 110px;
+    margin-right: 110px;
+}
+
+.footer_title h1 {
+    font-size: 48px; /* розмір основного заголовка */
+    font-family: Pacifico;
+    margin: 0;
+}
+
+.footer_title h3 {
+    font-size: 16px; /* розмір підзаголовка */
+    font-family: JejuMyeongjo;
+    font-weight: 400;
+    margin: 3px 0 0 190px;
+    padding: 0;
+}
+
+.contacts {
+    font-size: 24px;
+    font-family: JejuMyeongjo;
+    margin-top: 26px;
+}
+
+.contacts p {
+    margin: 0;
+    font-size: 24px;
+    font-family: JejuMyeongjo;
+}
+.pfone_links{
+    display: flex;
+    gap: 16px;
+    margin-top: 36px;
+    align-items: center;
+}
+
+.phone_link, .social_links img {
+    width: 32px; /* розмір іконок контактів */
+    height: 32px;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social_links a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-family: JejuMyeongjo;
+}
+
